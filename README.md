@@ -138,8 +138,10 @@ until a custom domain is attached.
 **Netlify / Cloudflare Pages** — connect the repo, leave the build command empty,
 publish directory `/`.
 
-After the domain is set, update the two `https://culturews.com` URLs in
-`sitemap.xml` and `robots.txt`.
+The site is live at **https://ethanfuhrmeister-source.github.io/culture-ws/**
+
+`sitemap.xml` and `robots.txt` point at that URL. If a custom domain is
+attached later, update them and add a `CNAME` file containing the domain.
 
 ---
 

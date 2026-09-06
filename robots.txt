@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://culturews.com/sitemap.xml
+Sitemap: https://ethanfuhrmeister-source.github.io/culture-ws/sitemap.xml
