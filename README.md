@@ -123,8 +123,17 @@ If you'd rather have real form submissions later, the markup is standard — poi
 
 It is static files. Any host works.
 
-**GitHub Pages** — push to `main`, then Settings → Pages → Source: *Deploy from a
-branch*, branch `main`, folder `/ (root)`.
+**GitHub Pages** — a deploy workflow is already committed at
+`.github/workflows/pages.yml`. It needs one manual step, once:
+
+> Settings → Pages → Source → **GitHub Actions**
+
+That dropdown cannot be set from a script: creating a Pages site requires
+repo-admin rights, which neither the Actions `GITHUB_TOKEN` nor an app
+integration has. After it is set, every push to `main` publishes on its own.
+
+The site will be at `https://ethanfuhrmeister-source.github.io/culture-ws/`
+until a custom domain is attached.
 
 **Netlify / Cloudflare Pages** — connect the repo, leave the build command empty,
 publish directory `/`.
